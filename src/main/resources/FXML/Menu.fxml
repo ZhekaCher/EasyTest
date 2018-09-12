@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.panemu.tiwulfx.control.NumberField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Menu_Controller">
+   <children>
+      <AnchorPane prefHeight="421.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="listOfTests_ListView" layoutX="14.0" layoutY="35.0" prefHeight="231.0" prefWidth="200.0" />
+            <Label layoutX="14.0" layoutY="14.0" text="List Of Tests:" />
+            <Button fx:id="addTest_Btn" layoutX="13.0" layoutY="280.0" mnemonicParsing="false" onAction="#addTest" prefHeight="25.0" prefWidth="70.0" text="ADD TEST" />
+            <Button fx:id="deleteTest_Btn" layoutX="130.0" layoutY="280.0" mnemonicParsing="false" onAction="#deleteTest" prefHeight="25.0" prefWidth="84.0" text="DELETE TEST" />
+            <Button fx:id="training_Btn" layoutX="13.0" layoutY="316.0" mnemonicParsing="false" onAction="#openTrainingWindow" prefHeight="25.0" prefWidth="70.0" text="TRAINING" />
+            <Button fx:id="generateRandomTest_Btn" layoutX="14.0" layoutY="349.0" mnemonicParsing="false" text="GENERATE RANDOM TEST" />
+            <NumberField fx:id="generateRandomTest_NumField" grouping="true" layoutX="178.0" layoutY="349.0" maxLength="3" negativeAllowed="false" prefHeight="25.0" prefWidth="36.0" />
+            <Button fx:id="openTestsFolder_Btn" layoutX="458.0" layoutY="349.0" mnemonicParsing="false" onAction="#openTestsFolder" text="OPEN TESTS FOLDER" />
+            <Button fx:id="addTestFromFile_Btn" layoutX="241.0" layoutY="280.0" mnemonicParsing="false" onAction="#addTestFromFile" prefHeight="25.0" prefWidth="270.0" text="ADD TEST FROM FILE" />
+            <ListView fx:id="listOfFiles_ListView" layoutX="241.0" layoutY="35.0" prefHeight="231.0" prefWidth="354.0" />
+            <Label layoutX="241.0" layoutY="14.0" text="List Of Files:" />
+            <Button fx:id="update_Btn" layoutX="525.0" layoutY="280.0" mnemonicParsing="false" onAction="#update" text="UPDATE" />
+            <Button layoutX="171.0" layoutY="316.0" mnemonicParsing="false" onAction="#openEditWindow" text="EDIT" />
+            <CheckBox fx:id="random" layoutX="93.0" layoutY="320.0" mnemonicParsing="false" text="Random" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

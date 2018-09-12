@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Edit_Controller">
+   <children>
+      <AnchorPane prefHeight="602.0" prefWidth="813.0">
+         <children>
+            <ListView fx:id="listOfQuestions_ListView" layoutX="14.0" layoutY="78.0" onMouseClicked="#reloadListOfAnswers" prefHeight="435.0" prefWidth="284.0" />
+            <Label layoutX="14.0" layoutY="14.0" text="List Of Questions:" />
+            <Button layoutX="304.0" layoutY="569.0" mnemonicParsing="false" onAction="#addRightAnswer" text="ADD RIGHT ANSWER" />
+            <Button layoutX="442.0" layoutY="569.0" mnemonicParsing="false" onAction="#addWrongAnswer" text="ADD WRONG ANSWER" />
+            <Button layoutX="590.0" layoutY="569.0" mnemonicParsing="false" onAction="#deleteAnswer" text="DELETE ANSWER" />
+            <Button layoutX="755.0" layoutY="569.0" mnemonicParsing="false" onAction="#save" text="SAVE" />
+            <Button layoutX="703.0" layoutY="569.0" mnemonicParsing="false" onAction="#back" text="BACK" />
+            <Button layoutX="14.0" layoutY="536.0" mnemonicParsing="false" onAction="#addQuestion" text="ADD QUESTION" />
+            <Button layoutX="182.0" layoutY="536.0" mnemonicParsing="false" onAction="#deleteQuestion" text="DELETE QUESTION" />
+            <ListView fx:id="listOfAnswers_ListView" editable="true" fixedCellSize="100.0" layoutX="304.0" layoutY="46.0" prefHeight="515.0" prefWidth="497.0" />
+            <Label layoutX="304.0" layoutY="14.0" text="List Of Answers:" />
+            <CheckBox fx:id="flag_CheckBox" layoutX="91.0" layoutY="573.0" mnemonicParsing="false" onAction="#changeFlag" text="Don't show anymore" />
+            <TextField fx:id="find_TextField" layoutX="14.0" layoutY="46.0" prefHeight="25.0" prefWidth="235.0" />
+            <Button layoutX="255.0" layoutY="46.0" mnemonicParsing="false" onAction="#find" text="FIND" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

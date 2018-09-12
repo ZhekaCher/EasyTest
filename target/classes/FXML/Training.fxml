@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Training_Controller">
+   <children>
+      <AnchorPane maxHeight="1080.0" maxWidth="1920.0" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <Button layoutX="390.0" layoutY="370.0" mnemonicParsing="false" onAction="#openMenuScene" prefHeight="24.0" prefWidth="52.0" text="Menu" AnchorPane.bottomAnchor="5.0" />
+            <ScrollPane hbarPolicy="NEVER" layoutY="76.0" prefHeight="280.0" prefWidth="600.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
+              <content>
+                <AnchorPane fx:id="answers_AnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="5.0" prefWidth="606.0" />
+              </content>
+            </ScrollPane>
+            <CheckBox fx:id="flag_CheckBox" layoutX="251.0" layoutY="374.0" mnemonicParsing="false" text="Don't show anymore" AnchorPane.bottomAnchor="9.0" />
+            <CheckBox fx:id="showAll_CheckBox" layoutX="14.0" layoutY="374.0" mnemonicParsing="false" text="Show all" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="14.0" />
+            <RadioButton fx:id="green_RadioButton" layoutX="168.0" layoutY="374.0" mnemonicParsing="false" text="Green" AnchorPane.bottomAnchor="9.0" />
+            <RadioButton fx:id="plus_RadioButton" layoutX="112.0" layoutY="374.0" mnemonicParsing="false" text="Plus" AnchorPane.bottomAnchor="9.0" />
+            <Button layoutX="534.0" layoutY="370.0" mnemonicParsing="false" onAction="#next" prefHeight="24.0" prefWidth="52.0" text="Next" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="14.0" />
+            <Label fx:id="question_Label" alignment="TOP_LEFT" layoutX="14.0" layoutY="40.0" prefHeight="30.0" prefWidth="534.0" style="-fx-border-width: 3; -fx-border-color: black;" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="52.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="testName_Label" alignment="CENTER_RIGHT" layoutX="386.0" layoutY="14.0" prefHeight="30.0" prefWidth="534.0" AnchorPane.rightAnchor="9.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Slider fx:id="textSize_Slider" layoutX="456.0" layoutY="376.0" max="40.0" min="12.0" prefHeight="14.0" prefWidth="66.0" value="12.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="456.0" AnchorPane.rightAnchor="78.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

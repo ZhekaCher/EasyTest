@@ -1,0 +1,9 @@
+Main.class
+Data\GlobalFunc.class
+GUI\Menu_Controller.class
+GUI\Training_Controller.class
+Data\Serialization.class
+GUI\Edit_Controller.class
+Data\Test.class
+Data\Global.class
+Data\Question.class
